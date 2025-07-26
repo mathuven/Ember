@@ -11,42 +11,42 @@ const categories = {
     name: "Spice",
     icon: Flame,
     emoji: "🌶️",
-    color: "from-orange-300 to-red-300",
+    color: "from-rose-400 to-pink-500",
     description: "Hot takes & unpopular opinions",
   },
   chuckle: {
     name: "Chuckle",
     icon: Laugh,
     emoji: "😂",
-    color: "from-yellow-300 to-orange-300",
+    color: "from-amber-400 to-orange-500",
     description: "Ridiculous, meme-worthy debates",
   },
   drift: {
     name: "Drift",
     icon: Waves,
     emoji: "🌊",
-    color: "from-blue-300 to-purple-300",
+    color: "from-teal-400 to-cyan-500",
     description: "Deep, thoughtful, late-night energy",
   },
   edge: {
     name: "Edge",
     icon: Zap,
     emoji: "⚡",
-    color: "from-purple-300 to-pink-300",
+    color: "from-violet-400 to-purple-500",
     description: "Controversial & bold",
   },
   glow: {
     name: "Glow",
     icon: Heart,
     emoji: "💗",
-    color: "from-pink-300 to-rose-300",
+    color: "from-emerald-400 to-green-500",
     description: "Wholesome, affirming, and soft",
   },
   flip: {
     name: "Flip",
     icon: Shuffle,
     emoji: "🔀",
-    color: "from-indigo-300 to-cyan-300",
+    color: "from-indigo-400 to-blue-500",
     description: "Random picks across all vibes",
   },
 }
@@ -125,8 +125,8 @@ export default function EmberApp() {
     <div
       className={`min-h-screen transition-all duration-500 ${
         darkMode
-          ? "bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
-          : "bg-gradient-to-br from-orange-100 via-pink-50 to-purple-100"
+          ? "bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900"
+          : "bg-gradient-to-br from-rose-50 via-amber-50 to-teal-50"
       }`}
     >
       <div className="container mx-auto px-4 py-8">
@@ -139,14 +139,19 @@ export default function EmberApp() {
               size="icon"
               onClick={() => setDarkMode(!darkMode)}
               className={`rounded-full ${
-                darkMode ? "text-yellow-300 hover:bg-slate-800" : "text-orange-600 hover:bg-orange-100"
+                darkMode ? "text-amber-300 hover:bg-slate-800" : "text-rose-600 hover:bg-rose-100"
               }`}
             >
               {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
           </div>
 
-          <h1 className={`text-5xl font-bold mb-4 ${darkMode ? "text-white" : "text-slate-800"}`}>✨ Ember ✨</h1>
+          <h1
+            className={`text-6xl font-bold mb-4 tracking-wide ${darkMode ? "text-white" : "text-slate-800"}`}
+            style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontStyle: "italic" }}
+          >
+            Ember
+          </h1>
           <p className={`text-xl mb-2 ${darkMode ? "text-purple-200" : "text-slate-600"}`}>
             A Warm Space for Hot Takes & Cool Conversations
           </p>
@@ -246,10 +251,10 @@ export default function EmberApp() {
 
             <div className="text-center mt-8">
               <p className={`text-sm ${darkMode ? "text-slate-400" : "text-slate-500"}`}>
-                📲 Perfect for sharing in your group chats ✨
+                📲 Perfect for sharing in your group chats
               </p>
               <p className={`text-xs mt-2 ${darkMode ? "text-slate-500" : "text-slate-400"}`}>
-                ✨ Questions curated for great conversations!
+                Questions curated for great conversations!
               </p>
             </div>
           </div>
