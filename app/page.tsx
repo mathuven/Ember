@@ -1,15 +1,14 @@
 "use client"
 
-export const metadata = {
-  title: "ember",
-};
-
-
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Moon, Sun, Shuffle, Heart, Zap, Waves, Laugh, Flame, Loader2 } from "lucide-react"
+
+export const metadata = {
+  title: "ember",
+};
 
 const categories = {
   spice: {
