@@ -6,10 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Moon, Sun, Shuffle, Heart, Zap, Waves, Laugh, Flame, Loader2 } from "lucide-react"
 
-export const metadata = {
-  title: "ember",
-};
-
 const categories = {
   spice: {
     name: "Spice",
